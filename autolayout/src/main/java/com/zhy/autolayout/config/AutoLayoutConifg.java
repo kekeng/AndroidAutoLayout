@@ -81,7 +81,9 @@ public class AutoLayoutConifg
 
         int[] screenSize = ScreenUtils.getScreenSize(context, useDeviceSize);
         mScreenWidth = screenSize[0];
-        mScreenHeight = screenSize[1];
+        // mScreenHeight = screenSize[1];
+        // 宽高等比例
+        mScreenHeight = mScreenWidth * mDesignHeight / mDesignWidth;
         L.e(" screenWidth =" + mScreenWidth + " ,screenHeight = " + mScreenHeight);
     }
 
