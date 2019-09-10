@@ -15,6 +15,7 @@ public class AutoLayoutActivity extends AppCompatActivity
     private static final String LAYOUT_LINEARLAYOUT = "LinearLayout";
     private static final String LAYOUT_FRAMELAYOUT = "FrameLayout";
     private static final String LAYOUT_RELATIVELAYOUT = "RelativeLayout";
+    private static final String LAYOUT_CONSTRAINTLAYOUT = "ConstraintLayout";
 
 
     @Override
@@ -34,6 +35,11 @@ public class AutoLayoutActivity extends AppCompatActivity
         if (name.equals(LAYOUT_RELATIVELAYOUT))
         {
             view = new AutoRelativeLayout(context, attrs);
+        }
+
+        if (name.equals(LAYOUT_CONSTRAINTLAYOUT))
+        {
+            view = new AutoConstraintLayout(context, attrs);
         }
 
         if (view != null) return view;
