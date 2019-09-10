@@ -15,7 +15,7 @@ public class AutoLayoutActivity extends AppCompatActivity
     private static final String LAYOUT_LINEARLAYOUT = "LinearLayout";
     private static final String LAYOUT_FRAMELAYOUT = "FrameLayout";
     private static final String LAYOUT_RELATIVELAYOUT = "RelativeLayout";
-    private static final String LAYOUT_CONSTRAINTLAYOUT = "ConstraintLayout";
+    private static final String LAYOUT_CONSTRAINTLAYOUT = "android.support.constraint.ConstraintLayout";
 
 
     @Override
