@@ -34,6 +34,16 @@ public class AutoLayoutInfo
         autoAttrs.add(autoAttr);
     }
 
+    public void replaceAttr(AutoAttr autoAttr) {
+        for(AutoAttr aa : autoAttrs) {
+            if(aa.getClass() == autoAttr.getClass()) {
+                autoAttrs.remove(aa);
+                break;
+            }
+        }
+        
+        autoAttrs.add(autoAttr);
+    }
 
     public void fillAttrs(View view)
     {
