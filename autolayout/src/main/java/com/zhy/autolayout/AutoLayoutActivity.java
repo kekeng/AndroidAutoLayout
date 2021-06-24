@@ -16,6 +16,7 @@ public class AutoLayoutActivity extends AppCompatActivity
     private static final String LAYOUT_FRAMELAYOUT = "FrameLayout";
     private static final String LAYOUT_RELATIVELAYOUT = "RelativeLayout";
     private static final String LAYOUT_CONSTRAINTLAYOUT = "android.support.constraint.ConstraintLayout";
+    private static final String LAYOUT_FLEXBOXLAYOUT = "com.google.android.flexbox.FlexboxLayout";
 
 
     @Override
@@ -38,6 +39,11 @@ public class AutoLayoutActivity extends AppCompatActivity
         }
 
         if (name.equals(LAYOUT_CONSTRAINTLAYOUT))
+        {
+            view = new AutoConstraintLayout(context, attrs);
+        }
+
+        if (name.equals(LAYOUT_FLEXBOXLAYOUT))
         {
             view = new AutoConstraintLayout(context, attrs);
         }
