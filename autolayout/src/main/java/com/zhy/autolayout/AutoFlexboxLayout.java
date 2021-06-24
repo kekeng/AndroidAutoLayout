@@ -17,7 +17,6 @@
 package com.zhy.autolayout;
 
 import android.content.Context;
-import android.support.constraint.ConstraintLayout;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 

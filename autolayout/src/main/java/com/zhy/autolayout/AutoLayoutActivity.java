@@ -45,7 +45,7 @@ public class AutoLayoutActivity extends AppCompatActivity
 
         if (name.equals(LAYOUT_FLEXBOXLAYOUT))
         {
-            view = new AutoConstraintLayout(context, attrs);
+            view = new AutoFlexboxLayout(context, attrs);
         }
 
         if (view != null) return view;
