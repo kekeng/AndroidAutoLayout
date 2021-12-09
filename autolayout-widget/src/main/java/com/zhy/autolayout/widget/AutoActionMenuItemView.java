@@ -3,7 +3,7 @@ package com.zhy.autolayout.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 
-import android.support.v7.view.menu.ActionMenuItemView;
+import androidx.appcompat.view.menu.ActionMenuItemView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 

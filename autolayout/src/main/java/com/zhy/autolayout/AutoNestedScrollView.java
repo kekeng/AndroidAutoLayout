@@ -16,13 +16,11 @@
 
 package com.zhy.autolayout;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
-import android.support.v4.widget.NestedScrollView;
+
+import androidx.core.widget.NestedScrollView;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 
 import com.zhy.autolayout.utils.AutoLayoutHelper;
 

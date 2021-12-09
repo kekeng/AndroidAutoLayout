@@ -16,12 +16,10 @@
 
 package com.zhy.autolayout;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
-import android.support.constraint.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.zhy.autolayout.utils.AutoLayoutHelper;
 
