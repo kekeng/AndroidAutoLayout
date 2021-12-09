@@ -15,11 +15,11 @@ public class AutoLayoutActivity extends AppCompatActivity
     private static final String LAYOUT_LINEARLAYOUT = "LinearLayout";
     private static final String LAYOUT_FRAMELAYOUT = "FrameLayout";
     private static final String LAYOUT_RELATIVELAYOUT = "RelativeLayout";
-    private static final String LAYOUT_CONSTRAINTLAYOUT = "android.support.constraint.ConstraintLayout";
+    private static final String LAYOUT_CONSTRAINTLAYOUT = "androidx.constraintlayout.widget.ConstraintLayout";
     private static final String LAYOUT_FLEXBOXLAYOUT = "com.google.android.flexbox.FlexboxLayout";
     private static final String LAYOUT_SCROLLVIEW = "ScrollView";
     private static final String LAYOUT_HORIZONTALSCROLLVIEW = "HorizontalScrollView";
-    private static final String LAYOUT_NESTEDSCROLLVIEW = "android.support.v4.widget.NestedScrollView";
+    private static final String LAYOUT_NESTEDSCROLLVIEW = "androidx.core.widget.NestedScrollView";
 
 
     @Override
