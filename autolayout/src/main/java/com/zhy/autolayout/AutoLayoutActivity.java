@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.view.View;
 
-;
-
 /**
  * Created by zhy on 15/11/19.
  */
@@ -20,6 +18,8 @@ public class AutoLayoutActivity extends AppCompatActivity
     private static final String LAYOUT_SCROLLVIEW = "ScrollView";
     private static final String LAYOUT_HORIZONTALSCROLLVIEW = "HorizontalScrollView";
     private static final String LAYOUT_NESTEDSCROLLVIEW = "androidx.core.widget.NestedScrollView";
+    private static final String LAYOUT_RADIOGROUP = "RadioGroup";
+    private static final String LAYOUT_RADIOGROUP_FULL = "android.widget.RadioGroup";
 
 
     @Override
@@ -64,6 +64,11 @@ public class AutoLayoutActivity extends AppCompatActivity
         if (name.equals(LAYOUT_NESTEDSCROLLVIEW))
         {
             view = new AutoNestedScrollView(context, attrs);
+        }
+
+        if (name.equals(LAYOUT_RADIOGROUP) || name.equals(LAYOUT_RADIOGROUP_FULL))
+        {
+            view = new AutoRadioGroup(context, attrs);
         }
 
         if (view != null) return view;
